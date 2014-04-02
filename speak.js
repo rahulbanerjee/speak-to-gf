@@ -76,6 +76,9 @@ $(document).ready(function () {
     $('body').addClass('active');
   }
 
+  if (window.location.href == "http://rajanand02.github.io/speak-to-gf/chat.html") {
+    $('#leave').hide();
+  }
   if (room) {
     setRoom(room);
   } else {
@@ -84,11 +87,11 @@ $(document).ready(function () {
       webrtc.createRoom(val, function (err, name) {
         console.log(' create room cb', arguments);
 
-        if (window.location.href == "http://rajanand02.github.io/speak-to-gf/chat.html") {
-          $('#leave').hide();
-        } else {
+        //if (window.location.href == "http://rajanand02.github.io/speak-to-gf/chat.html") {
+          //$('#leave').hide();
+        //} else {
           $('#leave').show();
-        }
+        //}
         var newUrl = location.pathname + '?' + name;
         if (!err) {
           history.replaceState({foo: 'bar'}, null, newUrl);
