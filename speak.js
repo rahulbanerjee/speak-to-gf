@@ -121,9 +121,9 @@ $(document).ready(function () {
 
     }
   });
- if (window.location.pathname.match(/\/chat.html?/)) {
-            $('#leave').show();
-      } else {
+ if (window.location.pathname == "speak-to-gf/chat.html") {
             $('#leave').hide();
+      } else {
+            $('#leave').show();
       }
 });
