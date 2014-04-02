@@ -121,4 +121,9 @@ $(document).ready(function () {
 
     }
   });
+ if (window.location.pathname.match(/\/chat.html?/)) {
+            $('#leave').show();
+      } else {
+            $('#leave').hide();
+      }
 });
