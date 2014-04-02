@@ -1,4 +1,6 @@
-
+body{
+  background-image:url('giftly.png');
+}
 .videoContainer {
   position: relative;
   width: 200px;
