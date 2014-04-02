@@ -121,7 +121,7 @@ $(document).ready(function () {
 
     }
   });
- if (window.location.href == "/speak-to-gf/chat.html") {
+ if (window.location.href == "http://rajanand02.github.io/speak-to-gf/chat.html") {
             $('#leave').hide();
       } else {
             $('#leave').show();
