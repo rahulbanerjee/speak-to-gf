@@ -20,8 +20,8 @@ body{
   background-color: #772953;
 }
 .heading{
-  width: 500px;
-  margin: 50px auto;
+  /*width: 500px;*/
+  margin: 50px auto 40px auto;
 }
 .get-room{
   width: 200px;
@@ -29,4 +29,24 @@ body{
 }
 .create-form{
   margin-bottom: 15px;
+}
+.info li{
+  font-size: 19px;
+  margin: 5px 0px;
+}
+.info ul{
+  /*list-style: none;*/
+}
+.info{
+  margin-top: 20px;
+}
+.about{
+  margin-right:160px;
+}
+.about-list{
+  font-size: 23px;
+}
+.about-list li{
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
