@@ -72,7 +72,7 @@ $(document).ready(function () {
   function setRoom(name) {
     $('form').remove();
     $('h1').text(name);
-    $('#subTitle').text('Link to join: ' + location.href);
+    $('#subTitle').text('Invite by sharing this url:  ' + location.href);
     $('body').addClass('active');
   }
 
