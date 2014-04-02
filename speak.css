@@ -9,12 +9,6 @@
   width: 100%;
   height: 100%;
 }
-.col-md-6 video {
-  position: absolute;
-}
-.col-md-6{
-  position: relative;
-}
 .volume_bar {
   position: absolute;
   width: 5px;
