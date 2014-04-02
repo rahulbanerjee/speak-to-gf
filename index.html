@@ -1,85 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SimpleWebRTC Demo</title>
-    <style type="text/css" src="bootstrap.min.css">
-    </style>
-    <style type="text/css" media="all" src="speak.css">
-    </style>
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.1/css/jasny-bootstrap.min.css">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.1/js/jasny-bootstrap.min.js"></script>
+    <title>Sepak to gf</title>
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css" media="" />
+    <link rel="stylesheet" href="speak.css" type="text/css" media="all" />
   </head>
 
   <body>
-    <div class="navbar navbar-default">
+    <div class="navbar navbar-inverse">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Brand</a>
+        <a class="navbar-brand" href="#">Speak to Girlfriend</a>
       </div>
       <div class="navbar-collapse collapse navbar-responsive-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Active</a></li>
-          <li><a href="#">Link</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
-              <li class="dropdown-header">Dropdown header</li>
-              <li><a href="#">Separated link</a></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="navbar-form navbar-left">
-          <input type="text" class="form-control col-lg-8" placeholder="Search">
-        </form>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Link</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-            </ul>
-          </li>
+          <li><a href="http://github.com/rajanand02">Raj Anand</a></li>
         </ul>
       </div>
     </div>
-    <h1 id="title">Start a room</h1>
-    <button id="screenShareButton"></button>
-    <p id="subTitle">(https required for screensaring to work)</p>
-    <form id="createRoom">
-      <input id="sessionInput"/>
-      <button type="submit">Create it!</button>
-    </form>
+    <div class="col-md-8 col-md-offset-2">
+      <h1 id="title">Start a room</h1>
+      <form id="createRoom" class="input-group">
+        <input id="sessionInput" class="form-control"/>
+        <span class="input-group-btn">
+          <button type="submit" class="btn btn-primary">Create it!</button>
+        </span>
+      </form>
+    </div>
     <div class="videoContainer">
       <video id="localVideo" style="height: 150px;" oncontextmenu="return false;"></video>
       <div id="localVolume" class="volume_bar"></div>
     </div>
     <div id="remotes"></div>
-<button type="button" class="btn btn-labeled btn-default"><span class="btn-label"><i class="glyphicon glyphicon-arrow-left"></i></span>Left</button>
-
-<!-- Standard button with label on the right side -->
-<button type="button" class="btn btn-labeled btn-default">Right<span class="btn-label btn-label-right"><i class="glyphicon glyphicon-arrow-right"></i></span></button>
-
-<!-- Success button with label -->
-<button type="button" class="btn btn-labeled btn-success"><span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Success</button>
-
-<!-- Danger button with label -->
-<button type="button" class="btn btn-labeled btn-danger"><span class="btn-label"><i class="glyphicon glyphicon-remove"></i></span>Danger</button>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="latest.js"></script>
     <script type="text/javascript" charset="utf-8" src="speak.js">
     </script>
