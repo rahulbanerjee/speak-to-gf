@@ -51,5 +51,6 @@ body{
   margin-bottom: 24px;
 }
 #leave{
+  display: none;
   margin-bottom: 10px;
 }

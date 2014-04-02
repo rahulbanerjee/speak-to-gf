@@ -1,6 +1,6 @@
 
-if (window.location.href == "http://rajanand02.github.io/speak-to-gf/chat.html") {
-  $('#leave').hide();
+//if (window.location.href == "http://rajanand02.github.io/speak-to-gf/chat.html") {
+  //$('#leave').hide();
 }
 $(document).ready(function () {
   // grab the room from the URL
