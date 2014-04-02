@@ -1,3 +1,7 @@
+
+if (window.location.href == "http://rajanand02.github.io/speak-to-gf/chat.html") {
+  $('#leave').hide();
+}
 $(document).ready(function () {
   // grab the room from the URL
   var room = location.search && location.search.split('?')[1];
@@ -76,9 +80,6 @@ $(document).ready(function () {
     $('body').addClass('active');
   }
 
-  if (window.location.href == "http://rajanand02.github.io/speak-to-gf/chat.html") {
-    $('#leave').hide();
-  }
   if (room) {
     setRoom(room);
   } else {
