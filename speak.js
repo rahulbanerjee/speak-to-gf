@@ -84,6 +84,11 @@ $(document).ready(function () {
       webrtc.createRoom(val, function (err, name) {
         console.log(' create room cb', arguments);
 
+        if (window.location.href == "http://rajanand02.github.io/speak-to-gf/chat.html") {
+          $('#leave').hide();
+        } else {
+          $('#leave').show();
+        }
         var newUrl = location.pathname + '?' + name;
         if (!err) {
           history.replaceState({foo: 'bar'}, null, newUrl);
@@ -96,34 +101,6 @@ $(document).ready(function () {
     });
   }
 
-  var button = $('#screenShareButton'),
-  setButton = function (bool) {
-    button.text(bool ? 'share screen' : 'stop sharing');
-  };
-  webrtc.on('localScreenRemoved', function () {
-    setButton(true);
-  });
 
-  setButton(true);
-
-  button.click(function () {
-    if (webrtc.getLocalScreen()) {
-      webrtc.stopScreenShare();
-      setButton(true);
-    } else {
-      webrtc.shareScreen(function (err) {
-        if (err) {
-          setButton(true);
-        } else {
-          setButton(false);
-        }
-      });
-
-    }
-  });
- if (window.location.href == "http://rajanand02.github.io/speak-to-gf/chat.html") {
-            $('#leave').hide();
-      } else {
-            $('#leave').show();
-      }
 });
+
