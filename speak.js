@@ -121,7 +121,7 @@ $(document).ready(function () {
 
     }
   });
- if (window.location.pathname == "speak-to-gf/chat.html") {
+ if (window.location.pathname == "/speak-to-gf/chat.html") {
             $('#leave').hide();
       } else {
             $('#leave').show();
