@@ -88,6 +88,7 @@ $(document).ready(function () {
       webrtc.createRoom(val, function (err, name) {
         console.log(' create room cb', arguments);
 
+        $('#leave').css('display', 'inline');
         var newUrl = location.pathname + '?' + name;
         if (!err) {
           history.replaceState({foo: 'bar'}, null, newUrl);
