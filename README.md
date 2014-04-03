@@ -2,11 +2,12 @@ speak-to-gf
 ===========
 
 * So you wanna speak with your Girlfriend...?
-* Tried Skype, Hangout, etc.. but not satisfied because of slow internet connection...?
+* Tried Skype, Hangout, etc.. but got frustrated because of slow internet connection...?
 * Speak-to-gf got you covered.
 * No installation required.
 * No sign up required.
-* Simply create chat room and share the link to get connected.
+* No strings attached.
+* Simply create a chat room and share the link to get connected.
 
 ###Thanks
 
