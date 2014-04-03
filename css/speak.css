@@ -1,5 +1,5 @@
 body{
-  background-image:url('giftly.png');
+  background-image:url('../images/giftly.png');
 }
 .videoContainer {
   position: relative;
@@ -40,7 +40,7 @@ body{
 .info{
   margin-top: 20px;
 }
-.about{
+.about, .home{
   margin-right:160px;
 }
 .about-list{
