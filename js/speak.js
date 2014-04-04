@@ -73,7 +73,7 @@ $(document).ready(function () {
   function setRoom(name) {
     $('form').remove();
     $('h1').text(name);
-    $('#subTitle').text('Invite by sharing this url:' + '  ' + location.href).addClass('alert alert-dismissable alert-warning');
+    $('#subTitle').text(location.href).addClass('alert alert-dismissable alert-warning');
     $('body').addClass('active');
   }
 
