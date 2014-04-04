@@ -86,6 +86,7 @@ $(document).ready(function () {
         console.log(' create room cb', arguments);
 
         $('#leave').css('display', 'inline');
+        $('#copy').css('display', 'inline');
         $(".clock").TimeCircles({
           time:{
             Days: {
@@ -107,14 +108,20 @@ $(document).ready(function () {
 
   if (window.location.href != "http://rajanand02.github.io/speak-to-gf/chat.html") {
     $('#leave').css('display', 'inline');
-  $(".clock").TimeCircles({
-    time:{
-      Days: {
-        show: false
+    $('#copy').css('display', 'inline');
+    $(".clock").TimeCircles({
+      time:{
+        Days: {
+          show: false
+        }
       }
-    }
-  });
+    });
   }
+
+  $('#copy').click(function () {
+    window.prompt('Share this url to anyone you want to connect:', window.location.href);
+    return false;
+  })
 
 });
 
