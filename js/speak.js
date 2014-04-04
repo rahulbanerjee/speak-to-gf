@@ -1,7 +1,4 @@
 
-//if (window.location.href == "http://rajanand02.github.io/speak-to-gf/chat.html") {
-  //$('#leave').hide();
-//}
 $(document).ready(function () {
   // grab the room from the URL
   var room = location.search && location.search.split('?')[1];
@@ -89,6 +86,13 @@ $(document).ready(function () {
         console.log(' create room cb', arguments);
 
         $('#leave').css('display', 'inline');
+        $(".clock").TimeCircles({
+          time:{
+            Days: {
+              show: false
+            }
+          }
+        });
         var newUrl = location.pathname + '?' + name;
         if (!err) {
           history.replaceState({foo: 'bar'}, null, newUrl);
