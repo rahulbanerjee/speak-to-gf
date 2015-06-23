@@ -106,7 +106,7 @@ $(document).ready(function () {
     });
   }
 
-  if (window.location.href != "http://rajanand02.github.io/speak-to-gf/chat.html") {
+  if (window.location.search != "") {
     $('#leave').css('display', 'inline');
     $('#copy').css('display', 'inline');
     $(".clock").TimeCircles({
